@@ -4,9 +4,25 @@
      <title>furmur v2.0</title>
      <meta name="yandex-verification" content="885746bdc66b639b" />
        <script src="//code.jivosite.com/widget.js" jv-id="khRy3FtFZ4" async></script>
+     <link rel='stylesheet' href='styles.css'>
   </head>
 
   <body>
-    <a href="javascript:void(0)" onclick="jivo_api.open(); return false;">Chat</a>
+    <!-- Chat & Callback api.open links -->
+    <a href="javascript:jivo_api.open()">Chat</a>
+    <br>
+    <a href="javascript:jivo_api.open({start : 'call'})">Callback</a>    
+    <!-- Chat & Callback additional button -->
+    <div id="jivocb" class="jivocb-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="jivocb-wrap">
+    <div class="jivocb-front">
+    </div>
+    <div class="jivocb-back">
+    <div class="jivocb-call" onclick="jivo_api.open({start : 'call'});"></div>
+    <div class="jivocb-chat" onclick="jivo_api.open();"></div>
+    </div>
+    <!-- js & css for Chat & Callback additional button -->
+    <link rel="stylesheet" href="cb.css" type="text/css" />
+    <script src="jscallbut.js" type="text/javascript"></script>
   </body>
 </html>
