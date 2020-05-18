@@ -5,13 +5,14 @@
      <meta name="yandex-verification" content="885746bdc66b639b" />
        <script src="//code.jivosite.com/widget.js" jv-id="khRy3FtFZ4" async></script>
      <link rel='stylesheet' href='styles.css'>
+     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' *.jivosite.com ws://*.jivosite.com/ data:;">
   </head>
 
   <body>
     <!-- Chat & Callback api.open links -->
     <a href="javascript:jivo_api.open()">Chat</a>
     <br>
-    <a href="javascript:jivo_api.open({start : 'call'})">Callback</a>    
+    <a href="javascript:jivo_api.open({start : 'call'})">Callback</a>
     <!-- Chat & Callback additional button -->
     <div id="jivocb" class="jivocb-container" ontouchstart="this.classList.toggle('hover');">
     <div class="jivocb-wrap">
